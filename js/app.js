@@ -26,15 +26,19 @@ var selection = parseInt(promptMessage);
       var x= input.slice(1,2);
       if(x==1){
         document.body.style.backgroundColor="yellow";
+        document.body.style.getElementById('groupName').color="yellow";
       }
       else if(x==2){
        
             document.body.style.backgroundColor="red";
+        document.body.style.getElementById('groupName').color="yellow";
           
       }
       else if(x==3){
        
         document.body.style.backgroundColor="black";
+        document.body.style.getElementById('groupName').color="yellow";
+
       
   }
   }
