@@ -1,0 +1,142 @@
+@import '_media';
+@import 'reset';
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css);
+
+$primary_color: #f6fbff;
+
+@mixin common_btn {
+     border: 1px solid rgb(51,51,51);
+     background-color: rgb(51,51,51);
+     color: white;
+     padding: 11px 20px;
+}
+header{
+    .all{
+        .image{
+          i{
+            display: none;
+          }
+        }
+        padding: 2rem 0rem;
+        img{
+            width: 30%;
+        }
+        ul{
+            
+            display: flex;
+            justify-content: space-between;
+            margin: 0;
+            span{
+                a{
+                    @include common_btn();
+                   color: white;
+
+                }
+            }
+            a{
+                color: rgb(51,51,51);
+                font-size: 15px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+main{
+    #common{
+        .all{
+           .port{
+            ul{
+                display: flex;
+                flex-wrap: nowrap;
+                margin: 0;
+                padding: 0;
+            li{
+                padding-right: 6rem;
+                 margin-top: 4rem;
+            }
+            }
+           }
+            .aboutSpan{
+                font-size: 15px!important;
+                font-weight: 700;
+                letter-spacing: 7px;
+                color: rgb(51,51,51)!important;
+               
+            }
+            p{
+                margin-top: 2rem;
+                font-size: 15px;
+                color: rgb(125, 119, 137);
+            }
+            ul{
+                li{
+                    strong{
+                        padding-right: 4rem;
+                    }
+                  margin-bottom: 1rem;
+                }
+            }
+
+            .text{
+                .buttonSubmit{
+                    display: inline;
+                    &:hover{
+                        background-color: green;
+                        color:#f6fbff;
+                    }
+                }
+                padding: 12rem 0rem;
+                h3{
+                    margin-bottom: 25px;
+                    font-size: 55px;
+                    font-weight: 700;
+                    letter-spacing: normal;
+                    color: rgb(51,51,51);
+                    position: relative;
+                    span{
+                       font-size: 50px;
+                       padding-left: 1rem;
+                    }
+                }
+                h3::after{
+                    position: absolute;
+                   content: '';
+                   bottom: -6px;
+                   left: 0;
+                   border: 2px solid rgb(51,51,51);
+                   width: 10%;
+                }
+                span{
+                    color: rgb(125, 119, 137);
+                    font-size: 23px;
+                }
+                button{
+                    margin-top: 2rem;
+                    @include common_btn();
+                   display: block;
+                   transition: .5s;
+                   &:hover{
+                    background-color: white;
+                    color: rgb(51,51,51);
+                   }
+                }
+                input{
+                    @include common_btn();
+                    margin-top: 2rem;
+                }
+            }
+        }
+     background-color: $primary_color;
+     img{
+        height: 100%;
+        width: 100%;
+     }
+    }
+}
+footer{
+    padding: 1rem 0;
+    p{
+        margin: 0;
+    }
+}

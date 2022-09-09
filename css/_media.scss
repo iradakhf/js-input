@@ -1,0 +1,19 @@
+@media(max-width: 576px){
+    header{
+        .all{
+            li{
+                display: none;
+            }
+            .menu{
+                display: inline!important;
+                
+            }
+          .image{
+            i{
+                display: inline!important;
+               padding-left: 20rem;
+            }
+          }
+        }
+    }
+}
